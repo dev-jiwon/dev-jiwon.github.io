@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: NA JI WON
+bio: 개발자가 되고싶은 블로거
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -10,19 +10,19 @@ description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
 
-# If you want to include your resume, set to true
+# If you want to include your resume, set to true 이력서 하려면 사용
 # and specify source (external or local).
-resume: true
-resume-external: true
+resume: false
+resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: http://dev-jiwon.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-119098198-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
