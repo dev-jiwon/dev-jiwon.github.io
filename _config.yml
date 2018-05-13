@@ -53,18 +53,17 @@ medium: skg10204
 email: devjiwon@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    najiwon:
+        name: 나지원
+        bio: 개발자가 되고싶은 블로거
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+#    jamesfoster:
+#        name: James Foster
+#        bio: A Man who develops software with coffee
+#        external-image: false
+#        picture: assets/images/james.jpg
+#        twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -76,7 +75,8 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# 여기에 다른 주제 정해도 되지 않으려나
+# projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
@@ -95,7 +95,8 @@ related: true
 post-advance-links: [blog]
 
 # show author block at the end of a post ?
-show-author: true
+# 원래는 true였는데 어차피 나혼자 운영하는거라 삭제함
+show-author: false
 
 # do you want some animations?
 animation: true
