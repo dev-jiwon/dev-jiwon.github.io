@@ -1,0 +1,296 @@
+
+/* ========================================
+	Light
+=========================================== */
+.light{
+	width:328px;
+
+}
+.light input[type="text"] {
+    border: medium none;
+    height: 45px;
+    padding: 5px 14px;
+    width: 75%;
+	float:left;
+}
+.light input[type="submit"] {
+    background: #0cace8 none repeat scroll 0 0;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    height: 45px;
+    padding: 5px 14px;
+    text-transform: uppercase;
+}
+.light input[type="submit"]:hover {
+  background-color: #19B5FE;
+}
+
+/* ========================================
+	dark
+=========================================== */
+.dark{
+	width:318px;
+	border-radius:5px;	
+}
+.dark input[type="text"] {
+    border: medium none;
+    height: 45px;
+    padding: 5px 14px;
+    width: 71%;
+	float:left;
+	border-radius: 5px 0 0 5px;
+}
+.dark input[type="submit"] {
+    background: none repeat scroll 0 0 #0CACE8;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+    padding: 5px 14px;
+	text-transform:uppercase;
+	border-radius: 0 5px 5px 0;
+}
+.dark input[type="submit"]:hover {
+  background-color: #19B5FE;
+}
+
+/* ========================================
+	Icon Style
+=========================================== */
+.icon{
+	width:328px;
+
+}
+.icon input[type="text"] {
+    border: medium none;
+    height: 45px;
+    padding: 5px 14px;
+    width: 75%;
+	float:left;
+	border-right:solid 1px #bfbfbf;
+}
+.icon input[type="submit"] {
+    background: url(../images/find.png) center no-repeat;
+	background-color:#FFF;
+	text-indent: -9999px; 
+	width:72px;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+    padding: 5px 14px;
+	text-transform:uppercase;
+}
+
+
+
+/* ========================================
+	 Icon Rouned Style
+=========================================== */
+
+.iconr{
+	width:328px;
+
+}
+.iconr input[type="text"] {
+	background: url(../images/find.png) right no-repeat;
+	background-color:#cccccc;
+	color:#000;
+	border-radius: 25px;
+    border: medium none;
+    height: 45px;
+    padding: 5px 14px;
+    width: 100%;
+	float:left;
+	border-right:solid 1px #bfbfbf;
+	
+}
+.iconr input[type="submit"] {
+    background: url(../images/find.png) center no-repeat;
+	background-color:#0f0e0e;
+	text-indent: -9999px; 
+	width:72px;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+	line-height:45px;
+    padding: 5px;
+	text-transform:uppercase;
+}
+
+
+
+
+/* ========================================
+	Bolder Style
+=========================================== */
+
+
+.form__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.bolder {
+	 margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  max-width: 20rem;
+  width: 90%;
+  
+  background-color: #42454e;
+  border-radius: .125rem;
+  font-size: 12px;
+  font-size: .75rem;
+  padding: 8px;
+  padding: .5rem;
+}
+.bolder input[type="search"] {
+  appearance: textfield;
+  box-sizing: content-box;
+}
+.bolder input[type="search"] {
+  background-color: #fff;
+  color: #42454e;
+  padding: 6px 8px;
+  padding: .375rem .5rem;
+  border:none;
+}
+
+.bolder input[type="submit"] {
+	cursor:pointer;
+  background-color: #0cace8;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+  border:none;
+}
+
+.bolder input[type="submit"]:hover {
+  background-color: #19B5FE;
+}
+
+/* ========================================
+	Bolder Style
+=========================================== */
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+ /* Form wrapper styling */
+.arrowstyle {
+background:#fff;
+max-width: 20rem;
+}
+ 
+/* Form text input */
+.arrowstyle input {
+width: 15rem;
+padding: 11px 15px;
+float: left;
+border: 0;
+background: #fff;
+border-radius: 3px 0 0 3px;
+}
+ 
+.arrowstyle input:focus {
+    outline: 0;
+    background: #fff;
+
+}
+ 
+.arrowstyle input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.arrowstyle input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.arrowstyle input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.arrowstyle button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 72px;
+color: white;
+
+background: #0cace8 ;
+border-radius: 0 3px 3px 0;
+
+}
+   
+.arrowstyle button:hover{     
+    background: #19B5FE;
+}   
+   
+.arrowstyle button:active,
+.arrowstyle button:focus{   
+    background: #19B5FE;
+    outline: 0;   
+}
+.arrowstyle button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #0cace8 transparent;
+    top: 12px;
+    left: -6px;
+}
+.arrowstyle button:hover:before{
+    border-right-color: #19B5FE;
+}
+.arrowstyle button:focus:before,
+.arrowstyle button:active:before{
+        border-right-color: #19B5FE;
+}      
+.arrowstyle button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+
+
+
+
+
