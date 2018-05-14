@@ -13,7 +13,7 @@ layout: compress
     <meta name=author content="{{ site.name }}">
 
     {% seo %}
-    
+
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -28,6 +28,7 @@ layout: compress
 <body>
 
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+
         {% if page.tag %}
             <div class="post">
         {% else %}
@@ -35,12 +36,13 @@ layout: compress
                 <div class="page {{ page.title | downcase }}">
             {% else %}
                 <div class="{{ page.title | downcase }}">
+
             {% endif %}
         {% endif %}
 
             {{ content }}
+
         </div>
-                    <a href="/search/"><img src="/assets/images/icon/search.png"/></a>
     </div>
 
     {% include icons.html %}
