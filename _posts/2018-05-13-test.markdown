@@ -7,6 +7,9 @@ headerImage: false
 tag:
 - swift
 - start
+- 스위프트
+- 공부
+- 기초
 category: blog
 author: JIWON
 description: 스위프트의 첫번째 글
