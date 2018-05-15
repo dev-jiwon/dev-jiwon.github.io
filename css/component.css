@@ -16,7 +16,7 @@
 .light input[type="submit"] {
     background: #0cace8 none repeat scroll 0 0;
     border: medium none;
-    color: #000000;
+    color: #fff;
     cursor: pointer;
     height: 45px;
     padding: 5px 14px;
