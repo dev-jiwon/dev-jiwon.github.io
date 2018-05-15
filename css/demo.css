@@ -72,7 +72,7 @@ a, button {
 .ccheader {
 	
 	margin: 0 auto;
-	padding: 2em;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -123,14 +123,14 @@ a, button {
 /* Wrapper Style */
 
 .wrapper {
-
+    margin: 0 auto;
 	overflow:auto;
 }
 
 section{ 
 	padding:5em 0;
 	float:left; 
-	width:80%;
+	width:50%;
 	min-height:250px;
 	height:auto;
 }

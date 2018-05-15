@@ -10,7 +10,7 @@
     border: medium none;
     height: 45px;
     padding: 5px 14px;
-    width: 75%;
+    width: 100%;
 	float:left;
 }
 .light input[type="submit"] {
