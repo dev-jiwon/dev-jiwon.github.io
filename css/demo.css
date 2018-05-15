@@ -148,7 +148,13 @@ section:nth-child(6) {
 background:#D2D7D3;
 }
 
-
+li {
+    line-height: 1.7;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 0.4px;
+}
 
 
 
