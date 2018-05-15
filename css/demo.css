@@ -10,55 +10,15 @@ body {
 	background: #fff;
 	color: #333;
 	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Lato', Arial, sans-serif;
+
 	margin:0;
 	padding:0;
+	
 }
-
-article,
-aside,
-details, /* 1 */
-figcaption,
-figure,
-footer,
-header,
-main, /* 2 */
-menu,
-nav,
-section,
-summary { /* 1 */
-  display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit; /* 1 */
-  margin: 0; /* 2 */
-}
-input { /* 1 */
-	overflow: visible;
-  }
-
 a {
-	background-color: transparent; /* 1 */
-	-webkit-text-decoration-skip: objects; /* 2 */
+	color: #59ABE3;
+	text-decoration: none;
 }
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
 form{
 	margin:0 auto;	
 }
@@ -163,14 +123,14 @@ a, button {
 /* Wrapper Style */
 
 .wrapper {
-    margin: 0 auto;
+
 	overflow:auto;
 }
 
 section{ 
 	padding:5em 0;
 	float:left; 
-	width:50%;
+	width:80%;
 	min-height:250px;
 	height:auto;
 }
@@ -202,11 +162,61 @@ li {
 }
 
 
-::-webkit-input-placeholder {
-	color: inherit;
-	opacity: 0.54;
+
+
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+small {
+	font-size: 80%;
+}
+
+  sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+optgroup {
+	font-weight: bold;
   }
 
-
-
-
+  ::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+  }
