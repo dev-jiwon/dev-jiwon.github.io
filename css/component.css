@@ -16,7 +16,7 @@
 .light input[type="submit"] {
     background: #0cace8 none repeat scroll 0 0;
     border: medium none;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     height: 45px;
     padding: 5px 14px;
@@ -164,7 +164,7 @@
 }
 .bolder input[type="search"] {
   background-color: #fff;
-  color: #42454e;
+  color: #fff;
   padding: 6px 8px;
   padding: .375rem .5rem;
   border:none;
@@ -204,7 +204,7 @@
 }    
  /* Form wrapper styling */
 .arrowstyle {
-background:#fff;
+background:#000000;
 max-width: 20rem;
 }
  
