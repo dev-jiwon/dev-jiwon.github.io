@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+html {
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+  }
+
 body {
 	background: #fff;
 	color: #333;
@@ -8,12 +14,51 @@ body {
 	font-family: 'Lato', Arial, sans-serif;
 	margin:0;
 	padding:0;
-	
 }
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+input { /* 1 */
+	overflow: visible;
+  }
+
 a {
-	color: #000000;
-	text-decoration: none;
+	background-color: transparent; /* 1 */
+	-webkit-text-decoration-skip: objects; /* 2 */
 }
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
 form{
 	margin:0 auto;	
 }
@@ -157,6 +202,10 @@ li {
 }
 
 
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54;
+  }
 
 
 
