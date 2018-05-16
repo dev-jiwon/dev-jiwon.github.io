@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+Allow: /
+Sitemap: http://dev-jiwon.github.io/sitemap.xml
