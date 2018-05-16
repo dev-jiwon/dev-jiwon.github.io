@@ -117,3 +117,7 @@ paginate_path: "blog/:num/"
 
 jekyll-mentions:
     base_url: https://github.com
+
+# 코드를 예쁘게 보이게 하기 위해 설치함
+highlighter: rouge
+
