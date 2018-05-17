@@ -10,7 +10,7 @@ tag:
 - 스위프트
 - 공부
 - 기초
-category: Swift
+category: blog
 author: JIWON
 description: 스위프트의 기본 문법들
 ---
