@@ -40,10 +40,17 @@ description: obb에 관한 내용들
 - **다형성** : 수행 시간에 바인딩 할 수 있는 어떠한 폼을 제공
 
 ## Object-Oriented Programming
-단순한 데이터 처리 흐름에서 벗어나 각 역할을 지닌 객체들의 상호작용으로 동작 <br />
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://i.imgur.com/qED0p3f.png" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+
+    <div class="toright">
+	<p>단순한 데이터 처리 흐름에서 벗어나 각 역할을 지닌 객체들의 상호작용으로 동작 <br />
 **객체** : 데이터 (상태) + 메서드 (행위) <br />
 최초의 **OOP** 언어 : Smalltalk / Smalltalk + C —> Objective-C <br />
-![객체 구조](https://i.imgur.com/qED0p3f.png)
+
 
 클래스의 형태)
 ```swift
@@ -58,8 +65,10 @@ class ClassName {
 			}
 }
 ```
+</p>
+  </div>
+</div>
 
-![구조 설명](https://i.imgur.com/YAagcHI.png)
 
 ## 객체란?!
 실세계에 존재하거나 생각할 수 있는 것을 **객체(object)**라고 한다. 흔히 볼 수 있는 책상, 의자, 전화기 같은 사물은 물론이고 강의, 수강 신청 같은 개념으로 존재하는 것도 모두 객체이다. 다시 말해 사전에 나와 있는 명사뿐 아니라 동사의 명사형까지도 모두 객체인 것이다. 그리고 더 넓게 보면 인간이 생각하고 표현할 수 있는 모든 것이 객체이다.
