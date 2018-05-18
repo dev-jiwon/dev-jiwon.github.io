@@ -75,5 +75,5 @@ description: 맥북 유저에게 유용
 
 <br />
 ![15-1사진](https://cdn-images-1.medium.com/max/1600/1*B97LXl3hsJQhfRogh2G3oA.png)
-~~디테일은 중요하지~~{: .text-center } <br />
+<figcaption class="caption">디테일은 중요하지!!</figcaption> <br />
 감사합니다!!

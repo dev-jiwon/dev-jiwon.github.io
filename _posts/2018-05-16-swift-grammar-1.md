@@ -325,18 +325,20 @@ a <= b
 ```
 
 ### Logical Operators (논리 연산자)
-논리연산자에는 크게 And, Or, Not이 있다.
-**And Operator**
-둘 다 참일때 참
+논리연산자에는 크게 And, Or, Not이 있다.<br />
+**And Operator**: 둘 다 참일때 참<br />
+
 | A | B | Result |
-|:------:|:------:|:------:|
+| :------------: | :-----------: | :-------------------: |
 | T | T | T |
 | T | F | F |
 | F | T | F |
 | F | F | F |
 
-**OR Operator**
-둘중에 하나라도 참이면 참
+---
+
+**OR Operator**: 둘중에 하나라도 참이면 참
+
 | A | B | Result |
 |:------:|:------:|:------:|
 | T | T | T |
@@ -344,12 +346,16 @@ a <= b
 | F | T | T |
 | F | F | F |
 
-**Not Operator**
-참이면 거짓으로, 거짓으면 참으로
-| A | Result |
-|:------:|:------:|
-| T | F |
-| F | F |
+---
+
+**Not Operator**: 참이면 거짓으로, 거짓으면 참으로
+
+|    A    | Result |
+|:------: |:------:|
+| T       |      F |
+| F       |      F |
+
+<bf />
 ```swift
 if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
   print(“Open the door”)
@@ -357,4 +363,3 @@ if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
   print(“Can’t open the door”)
 }
 ```
-
