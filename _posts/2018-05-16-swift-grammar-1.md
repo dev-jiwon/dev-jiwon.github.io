@@ -1,7 +1,7 @@
 ---
 title: "스위프트 문법 1 (기본, 출력, 변수, 타입)"
 layout: post
-date: 2018-05-16 15:54
+date: 2018-05-20 16:37
 image: /assets/images/Swift_logo.png
 headerImage: true
 tag:
@@ -37,11 +37,11 @@ tag:
 - Conversion
 - magnitude
 - abs
-
-category: Swift
+category: blog
 author: JIWON
 description: 스위프트의 기본 문법
 ---
+
 ## 필기의 습관!! 주석 달기
 프로그래밍의 규모가 커지면 내가 짠 코드를 내가 알아볼 수 없는 현상을 쉽게 볼 수  있습니다.
 그렇기에 주석은 프로그래밍에 없어서는 안될 중요한 요소이며, 필요한 가장 큰 이유는 아래와 같습니다.
