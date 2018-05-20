@@ -1,7 +1,7 @@
 ---
 title: "스위프트 문법 1 (기본, 출력, 변수, 타입)"
 layout: post
-date: 2018-05-20 16:37
+date: 2018-05-16 15:54
 image: /assets/images/Swift_logo.png
 headerImage: true
 tag:
@@ -102,7 +102,8 @@ var x = 0.0, y = 0.0, z = 0.0
 
 ---
 ## Naming
- 스위프트는 영어 외에도 유니코드 문자를 포함한 **대부분**의 문자를 사용해 네이밍 가능합니다. 
+![camel case](https://i.imgur.com/UsHha0K.png)
+ 스위프트에서 지향하는 네이밍은 단어의 첫 글자를 대문자로 작성하는 Camel case입니다. 또, 스위프트는 영어 외에도 유니코드 문자를 포함한 **대부분**의 문자를 사용해 네이밍 가능합니다. 
 
 ```swift
 let π = 3.14159
