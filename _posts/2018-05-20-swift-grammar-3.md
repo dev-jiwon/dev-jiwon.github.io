@@ -142,6 +142,7 @@ printSomeThing(someThing: "Hello")
 
 <br />
 **Nested Functions (중첩 함수)**
+<br />
 외부에는 숨기고 함수 내부에서만 사용할 함수를 중첩하여 사용 가능
 ```swift
 func chooseStepFunction(backward: Bool, value: Int) -> Int {
