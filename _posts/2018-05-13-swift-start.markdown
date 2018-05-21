@@ -14,7 +14,6 @@ category: blog
 author: JIWON
 description: 스위프트의 첫번째 글
 ---
-![swift](https://i.imgur.com/TmM2UcG.jpg)
 ## Swift
 **스위프트**는 애플이 2014년 WWDC에서 공개한 새로운 프로그래밍 언어이다. 
 기존에 사용하던 Object-C 의 단점을 보완한 애플의 신규 언어체계이다. 기존 Objective-C에 비해 클로저, 다중 리턴 타입, 네임스페이스, 제네릭스, 타입 인터페이스 등 Objective-C에는 없었던 현대 프로그래밍 언어가 갖고 있는 기능을 많이 포함시켰으며, 이에 따라 일정한 성능향상을 보이고 있다. 

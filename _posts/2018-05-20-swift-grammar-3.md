@@ -1,5 +1,5 @@
 ---
-title: "스위프트 문법 3"
+title: "스위프트 문법 3 (함수)"
 layout: post
 date: 2018-05-20 22:27
 image: /assets/images/Swift_logo.png
