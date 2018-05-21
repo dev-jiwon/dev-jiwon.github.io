@@ -1,0 +1,307 @@
+---
+title: "Object-Oriented Programming"
+layout: post
+date: 2018-05-18 11:35
+image: https://i.imgur.com/ph8w3kP.png
+headerImage: false
+tag:
+- oop
+- object
+- oriented
+- programming
+- swift
+- class
+- Object
+- Objective-C
+- Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
+- 객체
+- 폭포수
+- 나선형
+- 추상화
+- 캡슐화
+- 상속성
+- 다형성
+
+category: blog
+author: JIWON
+description: opp에 관한 내용들
+---
+# 객체 지향 프로그래밍
+**구조적 (Structured)**: Pascal, C언어<br />
+**객체지향(Object-Oriented)**: C++,  JAVA 등
+
+## Software development process
+![software development process](https://i.imgur.com/F5G1534.png)
+<figcaption class="caption">Software development process의 대표적인 모델</figcaption> <br />
+
+## Programming Paradigm
+패러다임 : 어떤 시대·분야에서의 특징적인 사고 방식·인식의 체계, 틀
+> Objective-C : OOP 언어 <br />
+> Swift : POP 를 지향하는 멀티 패러다임 언어
+
+[ 주요 패러다임 ]
+- **POP** : Protocol-Oriented Programming <br />
+- **OOP** : Object-Oriented Programming <br />
+- **FP** : Functional Programming <br />
+
+### 객체지향 프로그래밍 이란 **캡슐화**, **다형성**, **상속** 을 이용하여 코드 재사용을 증가시키고, 유지보수를 감소시키는 장점을 얻기 위해서 객체들을 연결시켜 프로그래밍 하는 것
+언어 또는 기술이 다음 사항들을 직접 지원한다면 객체 지향
+- **추상화** : 클래스나 객체를 제공
+- **상속** : 이미 존재하는 것으로부터 새로운 추상화를 만들어 낼 능력을 제공 런타임
+- **다형성** : 수행 시간에 바인딩 할 수 있는 어떠한 폼을 제공
+
+---
+## Object-Oriented Programming
+![OOP](https://i.imgur.com/FO9d3CJ.png)
+단순한 데이터 처리 흐름에서 벗어나 각 역할을 지닌 객체들의 상호작용으로 동작 <br />
+**객체** : 데이터 (상태) + 메서드 (행위) <br />
+최초의 **OOP** 언어 : Smalltalk / Smalltalk + C —> Objective-C <br />
+
+<center>클래스의 형태</center>
+
+```swift
+class ClassName {
+			var variable1 = 1
+      var variable2 = "2"
+      func functionName1(param: Int) {        
+	      //code
+			}
+			func functionName2(param: Int) {        
+	      //code
+			}
+}
+```
+
+## 객체란?!
+실세계에 존재하거나 생각할 수 있는 것을 **객체(object)**라고 한다. 흔히 볼 수 있는 책상, 의자, 전화기 같은 사물은 물론이고 강의, 수강 신청 같은 개념으로 존재하는 것도 모두 객체이다. 다시 말해 사전에 나와 있는 명사뿐 아니라 동사의 명사형까지도 모두 객체인 것이다. 그리고 더 넓게 보면 인간이 생각하고 표현할 수 있는 모든 것이 객체이다.
+<br />
+이런 객체는 관점에 따라 다음과 같이 여러 개념으로 이해된다.
+<br /><br />
+- **모델링 관점** : 객체는 명확한 의미를 담고 있는 대상 또는 개념이다.<br />
+- **프로그래머 관점** : 객체는 클래스에서 생성된 변수이다.<br />
+- **소프트웨어 개발 관점** : 객체는 소프트웨어 개발 대상으로, 어떤 한 시점에 객체 상태를 나타내는 데이터와 해당 데이터를 처리하고 참조하는 동작을 의미하는 메서드(함수)를 모아놓은 '데이터+메서드' 형태의 소프트웨어 모듈이다.<br />
+- **객체지향 프로그래밍 관점** : 객체는 데이터와 함수를 속성(attribute)과 메서드(method) 용어로 구현한다.
+![관련 이미지](https://i.imgur.com/PKxI8rJ.png)
+이제 소프트웨어 개발 관점에서 객체의 특성을 알아보자.
+
+- **식별자(identity) 존재** : 객체를 구별하는 유일한 식별자를 갖는다. <br />
+- **상태(state) 존재** : 자료구조에 해당하는 상태를 갖는다.<br />
+- **메서드 존재** : 연산을 수행할 수 있는 행위에 해당하는, 잘 정의된 메서드를 갖는다.<br />
+- **클래스로 선언 및 사용** : 객체지향 프로그램에서 객체는 비슷한 객체의 구조와 행위가 클래스로 선언되어 사용된다.<br />
+
+<figcaption class="caption">출처: 객체 (쉽게 배우는 소프트웨어 공학, 2015. 11. 30., 한빛아카데미(주))</figcaption> <br />
+
+---
+## Class & Object
+> "많은개체들이공통된명칭을 가질때그것들은언제나 또하나의이데아,즉형상을갖는다.가령침대는무수 히 많지만 침대의 이데아, 즉 그 형상은 오직 하나이다. 여러가지 개개의 침대는 실재가 아니며 오직 그 이데아의 모사(模寫)에 의해 만들어졌을 뿐이다.” - 플라톤
+![class & object](https://i.imgur.com/apOX1RA.png)
+
+[ **Class** ]
+- 추상 (abstract) , 표현 대상에 대한 이데아(형상)
+- 이상적인 존재 (이미지, 설계도, 틀, 설명서)
+- 공통의 특징
+<br />
+
+[ **Object** ]
+- 실체 (instance) , 추상을 실체화한 대상
+- 이데아의 모사
+- 개별 속성
+
+**Object-c와 Swift에서의 인스턴스 생성 방법**<br />
+**Objective-C 인스턴스 생성**<br />
+- [[ClassName alloc] init];
+
+**Swift 인스턴스 생성**<br />
+- Class Name()
+
+---
+
+## Four Primary Concepts (OOP의 특징)
+- **추상화** (Abstraction)
+- **캡슐화** (Encapsulation)
+  - **은닉화** (Information Hiding)
+- **상속성** (Inheritance)
+- **다형성** (Polymorphism)
+
+## 추상화 (Abstraction)
+![Abstraction](https://i.imgur.com/89m2AWI.png)
+대상의 불필요한 부분을 무시하여 복잡성을 줄이고 목적에 집중할 수 있도록 단순화 시키는 것 (디자인 레벨)
+- 사물들 간의 공통점만 취하고 차이점을 버리는 일반화를 통한 단순화
+- 중요한 부분의 강조를 위해 불필요한 세부 사항을 제거하는 단순화
+
+관심영역=도메인=컨텍스트 / 추상화=모델링=설계 <br />
+e.g. 지하철 노선도, 비상구 이미지, 이모지, 캐리커쳐 등
+
+<center>사람에 대한 추상화</center>
+
+```swift
+protocol People { 
+    var skinColor: String { get }
+    var eyesColor: String { get }
+    var name: String { get }
+    var height: Double { get }
+    
+    func Eat()
+    func Run()
+    func cry()
+}
+```
+
+---
+## 캡슐화 (Encapsulation)
+![Encapsulation](https://i.imgur.com/H5AbFua.jpg)
+추상화가 디자인 레벨에 해당하는 개념이라면 캡슐화는 구현(Implementation) 레벨에서의 개념<br />
+~~캡슐화와 추상화를 묶어서 표기하기도 함.~~
+- **데이터 캡슐화 (Data Encapsulation)** : 연관된 상태와 행동을 하나의 단위 (객체) 로 캡슐화
+- **정보 은닉화 (Information Hiding)** : 외부에 필요한 것만 알리고 불필요하거나 감춰야 할 정보는 숨김
+
+객체가 독립적으로 자신의 상태와 역할을 책임지고 수행할 수 있도록 자율성 부여<br />
+자세히 몰라도 되는 내부 동작방법을 숨기고 사용하는 방법만을 외부로 노출<br />
+외부에서 요청을 전달하면 수신 객체는 ‘어떻게’ 처리할 지를 결정. 외부에서 그 내용을 자세히 알 필요 없음<br />
+접근 제한자(private)를 이용해 데이터를 외부로부터 보호하여 무결성을 강화하고 변화에 유연하게 대응<br />
+e.g. 리모콘, 핸드폰, 카메라, 캡슐 등<br />
+아래 예제와 같이 외부에 공개할것과, 공개하지 않을것을 구분하고 Access를 조절
+
+```swift
+class Person {
+  private var location = "서울"
+  
+  private func doSomething1() {
+    print("잠시 휴게소에 들려서 딴짓")
+  }
+  private func doSomething2() {
+    print("한숨 자다 가기")
+  }
+  
+  func currentLocation() {
+    print("====")
+    print("현재 위치 :", location)
+    print("====")
+  }
+  
+  func goToBusan() {
+    print("서울을 출발합니다.")
+    doSomething1()
+    doSomething2()
+    print("부산에 도착했습니다.")
+    location = "부산"
+  }
+}
+
+let A = Person()
+A.currentLocation()
+A.goToBusan()
+A.currentLocation()
+```
+
+---
+## 상속성 (Inheritance)
+![Inheritance](https://i.imgur.com/12X2o8n.png)
+하나의 클래스의 특징(부모 클래스)을 다른 클래스가 물려받아 그 **속성**과 **기능**을 동일하게 사용하는 것<br />
+범용적인 클래스를 작성한 뒤 상속을 이용해 중복되는 속성과 기능을 쉽게 구현 가능<br />
+**주요 목적** : 재사용과 확장 (상속은 수직 확장, Extension 은 수평 확장)<br />
+언어에 따라 다중 상속 허용/비허용. **Swift 에서는 다이아몬드 상속 문제를 방지하고자 다중 상속 비허용**<br />
+부모 클래스와 자식 클래스는 **IS-A** 관계. Bird is a Animal / Human is a Animal <br />
+
+```swift
+//가장 기본이 될 동물 클래스
+class Animal {
+  var brain = true
+  var legs: Int
+  init(legs: Int = 0) {
+    self.legs = legs
+  }
+}
+
+//동물 클래스를 상속받아 사람 클래스 생성
+class Human: Animal {
+  override init(legs: Int = 2) {
+    super.init(legs: legs)
+  }
+}
+
+//동물 클래스를 상속받아 팻 클래스 생성
+class Pet: Animal {
+  var fleas: Int
+  init(fleas: Int = 0) {
+    self.fleas = fleas
+    super.init(legs: 4)
+  }
+}
+
+//팻 클래스를 상속받아 강아지 클래스 생성
+class Dog: Pet {
+  override init(fleas: Int = 8) {
+    super.init(fleas: fleas)
+  }
+}
+```
+
+---
+
+## 다형성 (Polymorphism)
+다양한 형태로 나타날 수 있는 능력 / 여러 형태(many shapes)를 가진다라는 의미의 그리스어에서 유래<br />
+동일한 요청에 대해 각각 다른 방식으로 응답할 수 있도록 만드는 것<br />
+오버라이딩과 오버로딩을 통해 구현하며 언어에 따라 오버라이딩만 지원하기도 함<br />
+
+스위프트에서는 **오버라이딩(Overrideing)**, **오버로딩(Overloading)**을 지원한다.<br />
+
+<br />
+
+### 오버로딩 (Overloading)
+- 동일한 이름의 메서드가 매개 변수의 이름, 타입, 개수 등의 차이에 따라 다르게 동작하는 것
+- 동일 요청이 매개 변수에 따라 다르게 응답
+
+**오버로딩의 조건**
+ 1. 다른 파라미터 이름 (외부 이름)
+ 2. 다른 파라미터 타입
+ 3. 다른 파라미터 개수
+ 
+ ```swift
+ //기본적인 함수 선언
+ func printParameter() {
+  print("No param")
+}
+
+//위와 같은 이름의 함수지만 파라미터가 있어서 오버로딩 됨
+func printParameter(param: Int) {
+  print("Input :", param)
+}
+
+//위와 같은 이름의 함수지만 파라미터의 Type이 달라 오버로딩 됨
+func printParameter(param: String) {
+  print("Input :", param)
+}
+
+//파라미터 개수가 달라 오버로딩 됨
+func printParameter(param: String, param1: String) {
+  print("Input :", param, param1)
+}
+```
+
+<br />
+
+### 오버라이딩 (Overriding)
+상위 클래스에서 상속 받은 메서드를 하위 클래스에서 필요에 따라 재정의하는 것 - 동일 요청이 객체에 따라 다르게 응답
+
+
+```swift
+class Dog {
+  func bark() { print("멍멍") }
+}
+class Poodle: Dog {
+  override func bark() { print("왈왈") }
+}
+class Husky: Dog {
+  override func bark() { print("으르르") }
+}
+class Bulldog: Dog {
+  override func bark() {
+    super.bark()          //super은 super class인 Dog를 지칭함
+    print("bowwow")
+  }
+}
+```
