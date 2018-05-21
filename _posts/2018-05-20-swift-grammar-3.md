@@ -121,7 +121,7 @@ arithmeticMean1(1,3,4,5,6, and: 10)
 ```
 
 <br />
-파라이터가 없지만 리턴이 있는 함수
+파라미터가 없지만 리턴이 있는 함수
 ```swift
 func sayHelloWorld() -> String {
     return "hello, world"

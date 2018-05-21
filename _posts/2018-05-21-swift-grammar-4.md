@@ -1,5 +1,5 @@
 ---
-title: "스위프트 문법 3 (조건문)"
+title: "스위프트 문법 4 (조건문)"
 layout: post
 date: 2018-05-21 14:00
 image: /assets/images/Swift_logo.png
