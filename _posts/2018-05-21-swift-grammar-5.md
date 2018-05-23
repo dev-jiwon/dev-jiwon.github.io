@@ -1,5 +1,5 @@
 ---
-title: "스위프트 문법 5 (반복문, 튜플)"
+title: "스위프트 문법 5 (반복문, 튜플, 사전형)"
 layout: post
 date: 2018-05-21 17:59
 image: /assets/images/Swift_logo.png
@@ -113,6 +113,29 @@ let (_, data5, data6) = threeValues2 //첫번째 값이 필요할때 이렇게 �
 typealias MyData = (Int, Double, String)
 ```
 
+### Decomposition (분해)
+튜플 내의 값을을 사용하려면 아래와 같이 쓴다.
+```swift
+let threeNumbers: (Int, Int, Int) = (1, 2, 5)
+let numbers = threeNumbers
+numbers
+numbers.0
+numbers.1
+
+
+let (first, second, third) = threeNumbers
+first
+second
+
+
+// wildcard pattern
+
+let (_, second1, third1) = threeNumbers
+second1
+third1
+```
+
+
 <br />
 
 ## Named Tuple
@@ -125,4 +148,52 @@ ios.language
 typealias NamedMyData = (age: Int, weight: Double, name: String)
 let jiwon: NamedMyData = (26, 60, "홍길동")
 jiwon.weight
+```
+
+## Comparison Operators (비교 연산자)
+ - Tuple은 7개 미만 요소에 대한 비교 연산자가 포함되어 있음
+ - 7개 이상의 요소를 비교하기 위해서는 비교 연산자를 직접 구현해야 함
+ 
+아래 튜플 비교의 결과 값은 무엇일까?
+
+```swift
+(1, "zebra") < (2, "apple")
+(3, "apple") < (3, "bird")
+(4, "dog") == (4, "dog")
+```
+
+<div class="spoiler"><p>정답은 모두 다 True이다.<br /> 이유는 앞의 숫자를 비교해보고 답이 안나오면 String보고 비교하는 형태인데 <br /> 1번은 앞의 숫자가 오른쪽이 크기 때문에 true <br /> 2번은 앞의 Int값은 같지만 뒤의 String에서 오른쪽이 크기 때문에 true <br /> 3번은 Int, String 둘다 같기 때문에 true이다.</p></div>
+
+## Tuple Matching
+튜플에서 원하는 값만 비교하고 싶다면 아래와 같이 언더바(_)를 쓰면 된다.
+```swift
+let somePoint = (1, 1)
+
+switch somePoint {
+case (0, 0):
+  print("\(somePoint) is at the origin")
+case (_, 0):
+  print("\(somePoint) is on the x-axis")
+case (0, _):
+  print("\(somePoint) is on the y-axis")
+case (-2...2, -2...2):
+  print("\(somePoint) is inside the box")
+default:
+  print("\(somePoint) is outside of the box")
+}
+```
+
+## Dictionary Enumeration
+**Dictionary Enumeration(사전형)**은 우리가 평소에 아는 사전처럼 **key**값과, **value**값이 하나의 세트로 묶여있으며, key는 중복될 수 없다. 또, Dictionary에는 순서가 없다.
+
+```swift
+let fruits = ["A": "Apple", "B": "Banana", "C": "Cherry"]
+
+for (key, value) in fruits {
+    print(key, value)
+}
+
+for element in fruits {
+    print(element.value)
+}
 ```
