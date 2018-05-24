@@ -17,6 +17,9 @@ tag:
 - Encapsulation
 - Inheritance
 - Polymorphism
+- Overloading
+- Override
+- Overrideing
 - 객체
 - 폭포수
 - 나선형
@@ -24,7 +27,8 @@ tag:
 - 캡슐화
 - 상속성
 - 다형성
-
+- 오버라이딩
+- 오버로딩
 category: blog
 author: JIWON
 description: opp에 관한 내용들
