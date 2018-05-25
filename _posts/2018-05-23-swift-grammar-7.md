@@ -13,6 +13,8 @@ tag:
 - Raw Value
 - Implicitly Assigned Raw Values
 - Initializing from a Raw Value
+- Nested
+- Mutating
 - 스위프트
 - 공부
 - 문법
@@ -151,4 +153,83 @@ if let somePlanet = PlanetIntRaw(rawValue: positionToFind) {
 } else {
     print("There isn't a planet at position \(positionToFind)")
 }
+```
+
+---
+## Nested
+
+### Function (Enum안의 함수)
+
+```swift
+enum Device: String {
+  case iPhone, iPad, tv, watch
+  
+  func printType() {
+    switch self {
+    case .iPad, .iPhone, .tv:
+      print("device :", self)
+    case .watch:
+      print("apple Watch")
+    }
+  }
+}
+
+let iPhone = Device.iPhone
+iPhone.printType()
+//출력: device : iPhone
+```
+
+### Enumerations (Enum 안의 Enum)
+```swift
+enum Wearable {
+    //Weigt, Armor은 Wearable의 case가 아니다.
+  enum Weight: Int {
+    case light = 1
+    case heavy = 2
+  }
+  enum Armor: Int {
+    case light = 2
+    case heavy = 4
+  }
+    //helmet과 boots가 Wearable의 case이다.
+  case helmet(weight: Weight, armor: Armor)
+  case boots
+  
+  func attributes() -> (weight: Int, armor: Int) {
+    switch self {
+    case .helmet(let w, let a):
+      return (weight: w.rawValue * 2, armor: a.rawValue * 4)
+    case .boots:
+      return (2, 4)
+    }
+  }
+}
+
+var woodenHelmet = Wearable.helmet(weight: .light, armor: .heavy)
+woodenHelmet.attributes()
+print(woodenHelmet)
+
+let boots = Wearable.boots
+```
+
+### Mutating
+새로운 변수를 만들거나 새 값을 넣지 않고 enum 의 값을 변경하려면 mutating을 써야한다.
+
+```swift
+enum NewRemoteControl {
+  case on, off
+  
+  mutating func next() { //mutating을 이용해야만 값이 변경됨  여기서 self는 remoteControl임
+    switch self {
+    case .off:
+      self = .on
+    case .on:
+      self = .off
+    }
+  }
+}
+
+var newRemoteControl = NewRemoteControl.on
+newRemoteControl.next()
+newRemoteControl.next()
 ```
