@@ -28,9 +28,9 @@ description: 스위프트의 기본 문법들
 <br />
 ![Collection](https://i.imgur.com/v05m1Ge.png)
 **Value Type (Swift Collection)**
-- Array
-- Dictionary
-- Set
+- [Array](/swift-grammar-10)
+- [Dictionary](/swift-grammar-11)
+- [Set](/swift-grammar-12)
 
 **Object Type (Foundation Collection)**
 - NSArray, NSMutableArray
