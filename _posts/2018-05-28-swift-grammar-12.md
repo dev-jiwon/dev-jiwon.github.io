@@ -140,16 +140,17 @@ if favoriteFruits.elementsEqual(tropicalFruits) {
 다른 Collection에는 없는 set에만 있는 집합 관련 특징이다. 
 <br />
 
-![subset](https://i.imgur.com/YLyM2MB.png)
+![subset](https://i.imgur.com/TiShyCS.png)
+
 a, b, c는 각각 Set이며 a는 b의 superset, b는 a의 subset, b와 c는 서로에게 disjoint한 관계이다.
 
 “is equal” operator (==) : 두 Set의 내용이 전부 동일 (Item의 type, count, value 모두)
 
-- isSubset(of:) : subset인지를 판
-- isSuperset(of:) : superset인지를 판별
-- isStrictSubset(of:) : subset이면서, subset!=superset
-- isStrictSuperset(of:) : superset이면서, subset!=superset
-- isDisjoint(with:) : 두 Set 간의 교집합이 없음
+- **isSubset(of:)**: subset인지를 판
+- **isSuperset(of:)**: superset인지를 판별
+- **isStrictSubset(of:)**: subset이면서, subset!=superset
+- **isStrictSuperset(of:)**: superset이면서, subset!=superset
+- **isDisjoint(with:)**: 두 Set 간의 교집합이 없음
 
 
 ```swift
@@ -188,10 +189,13 @@ if tropicalFruits.isStrictSuperset(of: yellowFruits) {
 <br />
 
 ### Fundamental Set Operations
-- intersection
-- union
-- subtracting
-- symmetricDifference
+- **intersection**
+- **union**
+- **subtracting**
+- **symmetricDifference**
+
+<br />
+
 ![Fundamental Set Operations](https://i.imgur.com/ayg1wJm.png)
 
 #### intersection (교집합)
@@ -244,5 +248,6 @@ exclusiveSet
 favoriteFruits.formSymmetricDifference(tropicalFruits)
 favoriteFruits
 ```
+
 
 
