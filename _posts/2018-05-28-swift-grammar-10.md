@@ -64,7 +64,7 @@ let emptyArray: [String] = []
 
 <br />
 
-**배열 내의 Value수를 count하기 위해서는 .count를 이용하면 된다.**
+**배열 내의 Value수를 count하기 위해서는 `.count`를 이용하면 된다.**
 ```swift
 let fruits = ["Apple", "Orange", "Banana"]
 let countOfFruits = fruits.count
@@ -102,7 +102,7 @@ fruits.endIndex - 1 == 2   //true
 <br />
 
 ### Searching
-Array에 찾는 값이 있는지 찾을때 .contains을, 원하는 값이 어디있는지 찾을때는 .index(of: )를 사용하면 된다
+Array에 찾는 값이 있는지 찾을때 `.contains`을, 원하는 값이 어디있는지 찾을때는 `.index(of: )`를 사용하면 된다
 ```swift
 let alphabet = ["A", "B", "C", "D", "E"]
 
@@ -128,7 +128,7 @@ if let index = alphabet.index(of: "D") {
 
 ### Add a new Element
 배열에 **새로운 값을 추가**하고 싶을때는 **.append** 혹은 **더하기(+)**를 이용하면 된다.
-새로운 값을 **원하는 index위치에 추가**하고 싶을때는** .insert(값, at: index위치)**를 이용하면 된다.
+새로운 값을 **원하는 index위치에 추가**하고 싶을때는 `.insert(값, at: index위치)`를 이용하면 된다.
 ```swift
 var alphabetArray = ["A"]
 
@@ -167,7 +167,7 @@ alphabetArray
 <br />
 
 ### Remove an Element
-배열에 원하는 index를 지우고 싶다면 .remove(at: index번호)를 이용하면 된다. 또, 배열 내 모든 값을 지우고 싶을때는 .removeAll()을 이용하면 지울 수 있다.
+배열에 원하는 index를 지우고 싶다면 `.remove(at: index번호)`를 이용하면 된다. 또, 배열 내 모든 값을 지우고 싶을때는 `.removeAll()`을 이용하면 지울 수 있다.
 ```swift
 alphabetArray = ["A", "B", "C", "D", "E"]
 //0번째 값을 지우고 지워진 값을 removed에 저장
@@ -192,7 +192,7 @@ alphabetArray
 <br />
 
 ### Sorting
-처음 배열에 대한 글을 썻던것 처럼 배열은 순서가 있는 Collection Functions이다. 그렇기때문에 순서는 중요한데. 이러한 배열의 순서를 정렬하려면 .sort(), .sorted()를 이용하면 된다.
+처음 배열에 대한 글을 썻던것 처럼 배열은 순서가 있는 Collection Functions이다. 그렇기때문에 순서는 중요한데. 이러한 배열의 순서를 정렬하려면 `.sort()`, `.sorted()`를 이용하면 된다.
 <br />
 sort와 sorted의 차이
 - **sort()**

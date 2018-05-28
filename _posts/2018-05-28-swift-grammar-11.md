@@ -49,7 +49,7 @@ let words3 = ["A": "Apple", "B": "Banana", "C": "City"]
 
 
 ### Number of Elements
-값의 개수를 알아내기 위해서는 배열과 동일하게 .count를 사용하면 된다
+값의 개수를 알아내기 위해서는 배열과 동일하게 `.count`를 사용하면 된다
 ```swift
 var words = ["A": "Apple", "B": "Banana", "C": "City"]
 let countOfWords = words.count
