@@ -215,13 +215,13 @@ print(multiplyBy2.next()) //Optional(1)
 print(multiplyBy2.next()) //Optional(2)
 print(multiplyBy2.next()) //Optional(4)
 ```
-prefic라는 함수를 이용해 원하는 만큼 실행할 수있다.
+`prefic`라는 함수를 이용해 원하는 만큼 실행할 수있다.
 ```swift
 for i in multiplyBy2.prefix(5) {
     print(i)
 }
 ```
-forEach를 이용하기 (위와 완전 동일)
+`forEach`를 이용하기 (위와 완전 동일)
 ```swift
 multiplyBy2.prefix(7).forEach { print($0)}
 ```
