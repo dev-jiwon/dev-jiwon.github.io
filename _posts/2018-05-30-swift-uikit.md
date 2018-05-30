@@ -29,23 +29,24 @@ description: 스위프트 UIKit 설명
     </div>
 </div>
 
-### [UILabel](https://developer.apple.com/documentation/uikit/uilabel?changes=_2)
+## [UILabel](https://developer.apple.com/documentation/uikit/uilabel?changes=_2)
+```swift
+@IBOutlet weak var myLabel: UILabel!
+```
 레이블은 우리가 일상생활에서 말하는 라벨과 같은 말이다. **사용자에게 원하는 데이터를 표시하고 싶을때** 사용한다.
 > 단, 사용자는 볼 수만 있고, 수정할 수 없다.
 
-#### 핵심 속성
-**var text: String?**
+### 핵심 속성
+#### var text: String?
 Label의 text**값**
 ```swift
-@IBOutlet weak var myLabel: UILabel!
- 
 myLabel = "Hi Lable"    //Label의 text를 "Hi Lable"로 변경
 print(myLabel!)         //현재 Label을 가져와 출력(옵셔널이기 때문에 언래핑 함)
 ```
 
 <br />
 
-**var textColor: UIColor!**
+#### var textColor: UIColor!
 
 Label의 text의 **색**, UIColor로 색을 지정할 수 있다.
 ```swift
@@ -54,7 +55,7 @@ myLabel.textColor = UIColor.brown //Label의 text 색을 브라운으로 변경�
 
 <br />
 
-**var textAlignment: NSTextAlignment**
+#### var textAlignment: NSTextAlignment
 
 Label의 text를 **Center(중앙), Left(왼쪽), Right(오른쪽)** 로 **정렬**할 수 있다.
 지정할때는 **NSTextAlignment**를 이용해 지정한다.
@@ -64,7 +65,7 @@ myLabel.textAlignment = NSTextAlignment.center  //text 중앙 정렬
 
 <br />
 
-**var font: UIFont!**
+#### var font: UIFont!
 
 text의 글꼴 및 크기를 설정한다.
 설정하려는 글꼴을 UIFont를 이용해 설정하는데, 일반적으로는 `UIFont.systemFont(OfSize: 원하는 폰트 사이즈)`를 이용해 시스템의 기본 폰트에 사이즈만 변경해서 사용하지만 만약 폰트를 수정하고 싶다면 `myLabel.font = UIFont(name: 폰트이름, size: CGFloat값)`을 사용하면 된다.
@@ -76,7 +77,7 @@ myLabel.font = UIFont(name: "Didot", size: 18)  //폰트: Didot, 사이즈: 18
 
 <br />
 
-**var numberOfLines: Int**
+#### var numberOfLines: Int
 
 레이블에 표시할 **최대 행의 수**
 Default는 1이며, 0을 설정할 경우 제한 없이 행을 늘릴 수 있다.
@@ -86,7 +87,47 @@ myLabel.numberOfLines = 3 //최대 행의 수를 3줄로 제한
 
 ---
 
-### [UIButton](https://developer.apple.com/documentation/uikit/uibutton?changes=_2)
+## [UIButton](https://developer.apple.com/documentation/uikit/uibutton?changes=_2)
+```swift
+@IBOutlet weak var myButton: UIButton!
+```
+버튼은 사용자가 누르면 무엇인가를 실행할 때 사용한다. 사용자가 버튼을 누르면 버튼에 연결된 메소드가 실행된다.
+
+### 버튼 상태(UIControlState)
+![button](https://i.imgur.com/hrhLboO.gif)
+- UIControlState.normal : 기본 상태
+- UIControlState.highligted : 버튼이 터치 되고있는 상태
+- UIControlState.selected : 선택되었을 때
+- UIControlState.disabled : 사용하지 않을 때
+  
+
+### 핵심 속성
+#### func setTitle(String?, for: UIControlState)
+버튼 타이틀을 설정하려면 setTitle메소드로 문자열과 버튼상태를 설정한다. 버튼상태는 UIControlState로 지정한다.
+```swift
+myButton.setTitle("normal", for: .normal)
+myButton.setTitle("highlighted", for: .highlighted)
+myButton.setTitle("selected", for: .selected)
+myButton.setTitle("disabled", for: .disabled)
+```
+  
+#### func setTitleColor(UIColor?, for: UIControlState)
+버튼 타이틀의 색을 변경
+타이틀 색 역시 타이틀의 내용처럼 상태에따라 다른 값으로 설정할 수 있다.
+```swift
+myButton.setTitleColor(UIColor.red, for: .normal)
+```
+
+#### var isEnabled: Bool
+버튼의 활성화 상태 (활성화/비활성화)
+```swift
+//버튼의 활성화 상태를 반대로 바꾸기
+self.myButton.isSelected = !self.myButton.isSelected
+```
+
+#### var isSelected: Bool
+버튼이 선택되었는지, default값은 false이다.
 
 
+## [switch]()
 
