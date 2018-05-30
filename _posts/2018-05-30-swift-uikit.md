@@ -405,18 +405,42 @@ https://i.imgur.com/CxuVTv2.png
     </div>
 </div>
 
-Aspect Fill을 사용할 때 이미지가 ImageView 밖으로 삐져나갈 수도 있는데 이럴 때는 스토리보드의 ImageView의 View에 Clip To Bounds항목을 체크해주거나 아래 코드를 입력한다.
-> 하지만 이미지가 ImageView의 범위를 벗어나 의도와 다른 형태가 될 수 있다.
+Aspect Fill을 사용할 때 이미지가 ImageView 밖으로 삐져나갈 수도 있는데 이럴 때는 아래 코드를 입력한다.
 ```swift
 myImageView.layer.masksToBounds = true
 ```
+
+> 하지만 이미지가 ImageView의 범위를 벗어나 의도와 다른 형태가 될 수 있다.
+
 
 ### 핵심 액션 이벤트
 이미지뷰는 사용할 수 있는 액션 이벤트가 없다.
 
 ---
 
-##기타 자료
+### 그 외
+[여기](https://developer.apple.com/ios/human-interface-guidelines/bars/navigation-bars/)에서 더 자세히 볼 수 있다.
+
+![](https://i.imgur.com/nwIf3c9.png)
+### [UISegmentedControl](https://developer.apple.com/documentation/uikit/uisegmentedcontrol?changes=_2)
+
+### [UIProgressView](https://developer.apple.com/documentation/uikit/uiprogressview?changes=_2)
+
+### [UIStepper](https://developer.apple.com/documentation/uikit/uistepper?changes=_2)
+
+![](https://i.imgur.com/1ST7VNX.png)
+### [UIPickerView](https://developer.apple.com/documentation/uikit/uipickerview?changes=_2)
+
+
+![](https://i.imgur.com/qJdJxEN.png)
+### [UIDatePicker](https://developer.apple.com/documentation/uikit/uidatepicker?changes=_2)
+
+
+![](https://i.imgur.com/XAlGFBU.png)
+### [UINavigationBar](https://developer.apple.com/documentation/uikit/uinavigationbar?changes=_2)
+
+
+## 기타 자료
 ![](https://i.imgur.com/KKT2UPK.png)
 강사님처럼 시뮬레이터를 전체화면으로 보고싶다면 [여기에서](http://zeddios.tistory.com/504) Allow Full Screen Mode 보기
 
