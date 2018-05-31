@@ -52,8 +52,8 @@ description: 스위프트 UIKit 설명
 #### var text: String?
 Label의 text**값**
 ```swift
-myLabel = "Hi Lable"    //Label의 text를 "Hi Lable"로 변경
-print(myLabel!)         //현재 Label을 가져와 출력(옵셔널이기 때문에 언래핑 함)
+myLabel.text = "It is Label"  //Label의 text를 "Hi Lable"로 변경
+print(myLabel.text!)          //현재 Label을 가져와 출력(옵셔널이기 때문에 언래핑 함)
 ```
 
 <br />
@@ -136,15 +136,21 @@ myButton.setTitleColor(UIColor.red, for: .normal)
 #### var isEnabled: Bool
 버튼의 활성화 상태 (활성화/비활성화)
 ```swift
-//버튼의 활성화 상태를 반대로 바꾸기
-self.myButton.isSelected = !self.myButton.isSelected
+if self.count == 2 {
+  self.myButton.isEnabled = false
+} else {
+  self.myButton.isEnabled = true
+}
 ```
 
 <br />
 
 #### var isSelected: Bool
 버튼이 선택되었는지, default값은 false이다.
-
+```swift
+//버튼의 활성화 상태를 반대로 바꾸기
+self.myButton.isSelected = !self.myButton.isSelected
+```
 ---
 
 ## [UISwitch](https://developer.apple.com/documentation/uikit/uiswitch?changes=_2)
