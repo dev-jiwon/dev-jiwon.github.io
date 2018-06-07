@@ -304,6 +304,11 @@ myTextField.keyboardType = UIKeyboardType.emailAddress
 
 <br />
 
+> 키보드 입력값을 비밀번호같이 `*`로 표시하고싶다면 아래와 같이 `.isSecureTextEntry`값을 true로 지정하면 된다.
+```swift
+textFieldPW.isSecureTextEntry = true
+```
+
 #### 리턴키 설정
 키보드의 return키를 입력하는 종류에 따라 지정할 수 있다. 리턴키 종류는 UIReturnKeyType으로 지정한다.
 ```swift
