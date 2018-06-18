@@ -1,5 +1,5 @@
 ---
-title: "스위프트 문법 16 (Type Casting)"
+title: "스위프트 문법 16 (Type Casting, Any Type)"
 layout: post
 date: 2018-06-18 10:13
 image: /assets/images/Swift_logo.png
