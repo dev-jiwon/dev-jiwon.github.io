@@ -69,7 +69,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: large
+width: normal
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
@@ -77,7 +77,7 @@ width: large
 
 # if you don't need projects, comment the *projects* configs below
 # 여기에 다른 주제 정해도 되지 않으려나
-# projects: true
+projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
