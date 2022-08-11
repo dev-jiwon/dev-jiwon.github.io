@@ -5,7 +5,7 @@
                 appIDs: ["KVQ3SYH7AU.com.klipwallet.app"],
                 components: [
                		{
-                	/: “*”
+                	"/": "*"
                     }
                 ]
             }
